@@ -23,15 +23,7 @@ public class Practica2 {
         boolean comprobar = false;
 
         do {
-
-            String numero1;
-            do {
-                System.out.println("CALCULADORA JAVA"
-                        + "\nIntrodueix el primer numero. ");
-                numero1 = sc.nextLine();
-            } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
-            double nume1 = Double.parseDouble(numero1);
-            double n1 = new Double(numero1);
+            Metodos.pedirPrimeroNumero();
 
             do {
                 Metodos.mostrarMenu();
